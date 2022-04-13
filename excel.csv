@@ -1,0 +1,6 @@
+departament_id,departament_name,address,zip_code,city,employees_no,students_no
+FNS-1972-229,Faculty of Natural Science,Stephen Village 264,22726,Gdansk,64,417
+FME-1969-460,Faculty of Management and Economics,Kristen Plain 266,65699,Gdansk,111,435
+FCS-1960-721,Faculty of Computer Science,Angela Roads 297,04377,Gdansk,38,149
+FHS-1963-673,Faculty of Health Sciences,Parks Mountain 8,96889,Gdansk,45,319
+FHSS-1975-161,Faculty of Humanities and Social Science,Hansen Prairie 247,76274,Gdansk,41,265

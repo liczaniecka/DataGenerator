@@ -1,0 +1,22 @@
+id,name,number_of_hours,number_of_sem,language,place_limit
+1,Biotechnology,1878,6,polish,65
+2,Biology,2040,6,polish,236
+3,Genetics,1980,6,polish,217
+4,Chemical Business,2128,7,polish,101
+5,Chemistry,1800,6,polish,238
+6,Environmental protection,2034,6,english,59
+7,Economy,1914,6,english,16
+8,International relations,1968,6,polish,47
+9,Physics,1824,6,polish,225
+10,Computer Science,2296,7,polish,51
+11,Data Engineering,2380,7,english,291
+12,Mathematics,1890,6,polish,122
+13,Medical Analytics,3290,10,polish,193
+14,Physiotherapy,3160,10,polish,230
+15,Pharmacy,3564,11,polish,100
+16,Law,3140,10,polish,253
+17,Canon Law,3340,10,english,332
+18,Psychology,3050,10,polish,199
+19,Journalism,1872,6,polish,30
+20,Sociology,1974,6,polish,239
+21,Criminology,1968,6,polish,181

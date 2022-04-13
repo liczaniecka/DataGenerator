@@ -1,0 +1,149 @@
+id,stream,name,form,ECTS,semester,course
+1,Bisque,sports,test,2,5,2
+2,Bisque,sports,exam,9,7,18
+3,MediumSlateBlue,sports,exam,6,7,15
+4,MediumSpringGreen,sports,exam,7,1,12
+5,MediumSpringGreen,English,exam,8,1,20
+6,Bisque,English,test,7,3,14
+7,Bisque,English,test,9,1,4
+8,MediumSlateBlue,English,exam,4,2,11
+9,Bisque,physics I,exam,0,6,12
+10,Bisque,physics I,exam,1,4,17
+11,MediumSlateBlue,physics I,test,8,4,2
+12,Bisque,physics I,test,5,2,15
+13,MediumSlateBlue,databases,test,4,4,16
+14,MediumSpringGreen,databases,exam,10,5,11
+15,MediumSpringGreen,databases,exam,10,8,15
+16,MediumSpringGreen,databases,exam,0,3,21
+17,Bisque,biology,test,10,1,12
+18,MediumSpringGreen,biology,exam,9,1,20
+19,MediumSpringGreen,biology,exam,1,3,18
+20,MediumSlateBlue,biology,test,1,5,6
+21,Bisque,computer graphics,exam,4,1,3
+22,Bisque,computer graphics,exam,6,6,16
+23,Bisque,computer graphics,test,2,5,1
+24,MediumSlateBlue,computer graphics,test,2,6,10
+25,MediumSpringGreen,programming languages,test,5,3,2
+26,MediumSpringGreen,programming languages,test,2,1,6
+27,MediumSlateBlue,programming languages,test,6,6,20
+28,MediumSpringGreen,programming languages,test,4,6,5
+29,MediumSlateBlue,programming basics,test,7,2,11
+30,MediumSpringGreen,programming basics,test,3,1,3
+31,Bisque,programming basics,exam,6,4,6
+32,Bisque,programming basics,test,7,6,16
+33,MediumSpringGreen,statistics,test,6,1,14
+34,MediumSlateBlue,statistics,exam,0,5,9
+35,MediumSlateBlue,statistics,test,3,4,21
+36,MediumSpringGreen,statistics,test,4,6,17
+37,Bisque,artificial intelligence,test,5,1,7
+38,Bisque,artificial intelligence,test,1,1,12
+39,MediumSpringGreen,artificial intelligence,exam,0,2,9
+40,MediumSlateBlue,artificial intelligence,exam,3,1,15
+41,MediumSlateBlue,psychology,exam,7,6,7
+42,MediumSpringGreen,psychology,test,2,4,20
+43,Bisque,psychology,test,3,3,6
+44,MediumSpringGreen,psychology,test,3,2,21
+45,MediumSpringGreen,precalculus,test,10,3,3
+46,Bisque,precalculus,exam,3,8,14
+47,MediumSlateBlue,precalculus,exam,2,4,18
+48,Bisque,precalculus,exam,3,4,11
+49,Bisque,linear algebra,test,6,6,21
+50,MediumSpringGreen,linear algebra,exam,0,4,11
+51,MediumSlateBlue,linear algebra,test,3,5,5
+52,Bisque,linear algebra,test,9,2,3
+53,MediumSpringGreen,calculus,exam,3,1,12
+54,MediumSlateBlue,calculus,exam,0,2,9
+55,MediumSpringGreen,calculus,test,0,2,6
+56,MediumSpringGreen,calculus,test,5,2,3
+57,Bisque,engineering physics,test,4,1,19
+58,MediumSpringGreen,engineering physics,test,6,1,21
+59,MediumSlateBlue,engineering physics,test,10,3,3
+60,Bisque,engineering physics,exam,3,6,2
+61,MediumSpringGreen,digital circuits,test,1,5,7
+62,MediumSlateBlue,digital circuits,exam,10,1,8
+63,MediumSlateBlue,digital circuits,test,5,3,9
+64,MediumSpringGreen,digital circuits,test,6,7,16
+65,MediumSlateBlue,object-oriented programming,test,8,10,16
+66,MediumSlateBlue,object-oriented programming,exam,9,3,11
+67,MediumSlateBlue,object-oriented programming,exam,6,6,9
+68,MediumSlateBlue,object-oriented programming,test,4,6,17
+69,MediumSlateBlue,chemistry I,exam,3,6,5
+70,MediumSlateBlue,chemistry I,exam,0,5,20
+71,Bisque,chemistry I,exam,7,6,10
+72,MediumSpringGreen,chemistry I,test,9,1,16
+73,Bisque,chemistry II,test,9,2,16
+74,MediumSpringGreen,chemistry II,exam,7,4,12
+75,Bisque,chemistry II,exam,5,5,1
+76,MediumSlateBlue,chemistry II,exam,5,3,15
+77,Bisque,chemistry III,test,10,1,5
+78,Bisque,chemistry III,exam,10,1,6
+79,MediumSlateBlue,chemistry III,test,6,6,7
+80,Bisque,chemistry III,test,2,6,16
+81,Bisque,physics II,test,0,2,16
+82,Bisque,physics II,exam,0,6,19
+83,MediumSlateBlue,physics II,test,2,1,4
+84,Bisque,physics II,exam,5,4,21
+85,MediumSlateBlue,physics III,test,5,2,21
+86,MediumSpringGreen,physics III,test,1,4,7
+87,MediumSpringGreen,physics III,exam,4,6,9
+88,Bisque,physics III,exam,5,4,19
+89,MediumSpringGreen,crystallography,test,8,1,13
+90,MediumSpringGreen,crystallography,test,8,2,2
+91,MediumSlateBlue,crystallography,test,3,3,9
+92,MediumSlateBlue,crystallography,test,0,2,18
+93,MediumSlateBlue,numerical methods,exam,1,4,10
+94,Bisque,numerical methods,exam,5,4,19
+95,MediumSlateBlue,numerical methods,test,9,3,12
+96,Bisque,numerical methods,test,5,3,16
+97,MediumSlateBlue,internships,test,5,2,3
+98,Bisque,internships,test,1,3,13
+99,MediumSlateBlue,internships,test,10,7,14
+100,MediumSlateBlue,internships,exam,7,1,1
+101,Bisque,logistics,exam,10,4,14
+102,MediumSlateBlue,logistics,test,10,5,12
+103,MediumSlateBlue,logistics,test,1,3,9
+104,Bisque,logistics,test,10,1,18
+105,MediumSlateBlue,logic,exam,4,6,7
+106,Bisque,logic,test,8,5,6
+107,Bisque,logic,test,10,1,14
+108,MediumSlateBlue,logic,exam,1,1,4
+109,MediumSlateBlue,business,exam,3,4,2
+110,MediumSlateBlue,business,exam,5,2,3
+111,MediumSpringGreen,business,exam,7,1,12
+112,MediumSlateBlue,business,exam,4,5,1
+113,MediumSpringGreen,geometry,exam,2,3,4
+114,MediumSlateBlue,geometry,exam,0,6,3
+115,MediumSlateBlue,geometry,test,9,10,17
+116,MediumSlateBlue,geometry,exam,2,6,7
+117,MediumSlateBlue,optics,exam,4,9,18
+118,Bisque,optics,test,3,3,20
+119,Bisque,optics,exam,10,2,3
+120,Bisque,optics,test,8,4,2
+121,Bisque,anatomy,exam,3,5,2
+122,MediumSpringGreen,anatomy,test,2,1,20
+123,MediumSpringGreen,anatomy,test,3,7,15
+124,MediumSlateBlue,anatomy,test,2,4,1
+125,Bisque,biochemistry,test,1,5,10
+126,MediumSpringGreen,biochemistry,test,10,5,19
+127,MediumSpringGreen,biochemistry,test,5,2,21
+128,Bisque,biochemistry,test,7,2,9
+129,MediumSpringGreen,human physiology,test,6,2,3
+130,Bisque,human physiology,test,8,2,7
+131,Bisque,human physiology,test,6,5,21
+132,MediumSpringGreen,human physiology,test,5,10,17
+133,MediumSlateBlue,diseases,exam,10,1,10
+134,Bisque,diseases,exam,9,3,8
+135,Bisque,diseases,exam,9,2,13
+136,MediumSlateBlue,diseases,test,6,1,6
+137,Bisque,viruses,exam,4,5,2
+138,MediumSpringGreen,viruses,test,1,4,15
+139,MediumSlateBlue,viruses,exam,10,6,11
+140,MediumSpringGreen,viruses,exam,9,3,16
+141,MediumSlateBlue,legal history,test,5,1,4
+142,MediumSlateBlue,legal history,exam,7,8,16
+143,MediumSlateBlue,legal history,test,2,4,18
+144,MediumSpringGreen,legal history,exam,5,1,15
+145,MediumSlateBlue,civil law,test,3,1,3
+146,MediumSpringGreen,civil law,test,7,2,6
+147,MediumSpringGreen,civil law,exam,1,9,17
+148,MediumSlateBlue,civil law,test,5,3,4

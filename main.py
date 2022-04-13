@@ -9,11 +9,11 @@ fake = fk.Faker()
 fk.Faker.seed(2001)
 
 
-numC = 21   # number of available courses
-numSu = 37  # number of available subjects
+num_courses = 21   # number of available courses
+num_subjects = 37  # number of available subjects
 
 
-def make_students(numS):
+def make_students(num_students):
     school_list = ['Liceum', 'Technikum', 'Other']
     higher_education_list = (0, 1)
     voivodeship_list = ['mazowieckie', 'slaskie', 'wielkopolskie', 'malopolskie', 'dolnoslaskie', 'lodzkie',
@@ -21,7 +21,7 @@ def make_students(numS):
                         'warminsko-mazurskie', 'swietokrzyskie', 'podlaskie', 'lubuskie', 'opolskie']
     fake_students = []
 
-    for x in range(numS):
+    for x in range(num_students):
         gender = np.random.choice(["M", "F"], p=[0.5, 0.5])
         fake_students.append({'PESEL': fake.unique.random_int(min=10000000000, max=99999999999),
                               'gender': gender,
@@ -45,13 +45,13 @@ def make_students(numS):
     return fake_students
 
 
-def make_results(numS, students_df):
+def make_results(num_students, students_df):
     subject_list = ["Polish", "Mathematics", "Foreign Language", "Biology", "Chemistry", "Physics", "Geography",
                     "History", "Informatics", "Other"]
     fake_results = []
     index = 1
 
-    for x in range(numS):
+    for x in range(num_students):
         sub_list = []
         y = 0
         while y < 3:
@@ -72,12 +72,12 @@ def make_results(numS, students_df):
     return fake_results
 
 
-def make_applications(numS, students_df, year):
+def make_applications(num_students, students_df, year):
     status_list = ["Successful", "Unsuccessful", "NULL"]
     fake_applications = []
     index = 1
 
-    for x in range(numS):
+    for x in range(num_students):
         c_list = []
         y = 0
         while y < 5:
@@ -113,7 +113,7 @@ def make_subjects(course_df):
     fake_subjects = []
     index = 1
 
-    for x in range(numSu):
+    for x in range(num_subjects):
         c_list = []
         y = 0
         while y < 4:
@@ -149,22 +149,22 @@ def make_course():
                      'number_of_sem': sem_num_list[x],
                      'language': 'english' if course_list[x] in ('Environmental protection', 'Economy',
                                                                  'Data Engineering', 'Canon Law') else 'polish',
-                     'place_limit': fake.random_int(min=0, max=400)} for x in range(numC)]
+                     'place_limit': fake.random_int(min=0, max=400)} for x in range(num_courses)]
 
     return fake_courses
 
 
-def make_achievements(numAc, students_df):
+def make_achievements(num_achievements, students_df):
     field_list = ['Sport', 'Knowledge', 'Voluntary work']
     level_list = ['international', 'national', 'provincial', 'district']
     fake_achievements = []
 
-    for x in range(numAc):
+    for x in range(num_achievements):
         fake_achievements.append({'id': x + 1,
                                   'field': np.random.choice(field_list, p=[0.35, 0.4, 0.25]),
                                   'level': np.random.choice(level_list, p=[0.1, 0.2, 0.3, 0.4]),
                                   'short_description': fake.pystr(min_chars=None, max_chars=500),
-                                  'student': students_df['PESEL'][fake.random_int(min=0, max=numS-1)]})
+                                  'student': students_df['PESEL'][fake.random_int(min=0, max=num_students-1)]})
 
     return fake_achievements
 
@@ -179,13 +179,13 @@ def update_applications(U_applications_df):
     return U_applications_df
 
 
-def add_new_values_to_csv(numS, numAc, year, mode, header):
-    students_df = pd.DataFrame(make_students(numS))
-    results_df = pd.DataFrame(make_results(numS, students_df))
-    applications_df = pd.DataFrame(make_applications(numS, students_df, year))
+def add_new_values_to_csv(num_students, num_achievements, year, mode, header):
+    students_df = pd.DataFrame(make_students(num_students))
+    results_df = pd.DataFrame(make_results(num_students, students_df))
+    applications_df = pd.DataFrame(make_applications(num_students, students_df, year))
     course_df = pd.DataFrame(make_course())
     subjects_df = pd.DataFrame(make_subjects(course_df))
-    achievements_df = pd.DataFrame(make_achievements(numAc, students_df))
+    achievements_df = pd.DataFrame(make_achievements(num_achievements, students_df))
 
     students_df.to_csv('students.csv', mode=mode, index=False, header=header)
     results_df.to_csv('results.csv', mode=mode, index=False, header=header)
@@ -197,14 +197,14 @@ def add_new_values_to_csv(numS, numAc, year, mode, header):
 
 # Using this script
 # Decide on the setup
-numS = 5000     # number of generated applicants
-numAc = 3750    # number of saved achievements
-year = 2020     # year of the application round
-mode = 'w'      # mode of saving data: 'w' for write and 'a' to append
-header = True   # header arrangements: if mode = 'w' header = True, else = False
+num_students = 5000         # number of generated applicants
+num_achievements = 3750     # number of saved achievements
+year = 2020                 # year of the application round
+mode = 'w'                  # mode of saving data: 'w' for write and 'a' to append
+header = True               # header arrangements: if mode = 'w' header = True, else = False
 
 # Create and save/append the data set
-add_new_values_to_csv(numS, numAc, year, mode, header)
+add_new_values_to_csv(num_students, num_achievements, year, mode, header)
 
 # Update
 U_applications_df = pd.read_csv('applications.csv')
